@@ -19,3 +19,18 @@ public class Task1 {
         System.out.println("Билет счастливый: " + lucky_ticket);
     }
 }
+
+// Решение лучше ниже
+// public class tick {
+//     public static void main(String[] args) {
+//         int[] ticket = {1,3,4,6,1,1};
+//         tick.printLuckyTicket(ticket);
+//     }
+//     public static void printLuckyTicket (int[] ticket) {
+//         if ((ticket[0] + ticket[1] + ticket[2] == ticket[3] + ticket[4] + ticket[5])) {
+//             System.out.println("true");
+//         } else {
+//             System.out.println("False");
+//         }
+//     }
+// }
