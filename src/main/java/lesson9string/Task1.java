@@ -20,7 +20,7 @@ public class Task1 {
 
 //    public static void main(String[] args) {
 //    }
-//        String surname = "1";
+//        String surname = "2";
 //        String rating = "2";
 //        String subject = "3";
 //        System.out.println("Студент" + surname + "получил" + rating + "по" + subject);
