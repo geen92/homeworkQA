@@ -15,23 +15,23 @@ public class Task3 {
         String s2 = "6 minus 5";
         String s3 = "8 plus 10";
         String s4 = "16 minus 5";
-        Task3.expressionMath(s1);
-        Task3.expressionMath(s2);
-        Task3.expressionMath(s3);
-        Task3.expressionMath(s4);
+        Task3.calculateTheResult(s1);
+        Task3.calculateTheResult(s2);
+        Task3.calculateTheResult(s3);
+        Task3.calculateTheResult(s4);
     }
-    public static void expressionMath(String x) {
-        String[] expression = x.split("\\s");
+    public static void calculateTheResult (String expressions) {
+        String[] expression = expressions.split("\\s");
         int temp = 0;
         if (expression[1].contains("plus"))
         {
             temp = (Integer.parseInt(expression[0]) + Integer.parseInt(expression[2]));
-            System.out.println(x + " = " + temp);
+            System.out.println(expressions + " = " + temp);
         }
         else if ((expression[1].contains("minus")))
         {
             temp = (Integer.parseInt(expression[0]) - Integer.parseInt(expression[2]));
-            System.out.println(x + " = " + temp);
+            System.out.println(expressions + " = " + temp);
         }
         else System.out.println("Некорректное выражение!");
     }
