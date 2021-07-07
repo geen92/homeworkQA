@@ -3,18 +3,27 @@
 
 package lesson9string;
 
+import java.io.*;
+
 public class Task4 {
-    public static void main(String[] args) {
-        String a1 = "Строка";
-        String a2 = "Строка Строка Строка";
-        String a3 = "Строка Строка";
-        String a4 = "Строка Строка Строка Строка";
-        String a5 = "Строка Строка";
-        String a6 = "Строка Строка Строка Строка Строка";
-        String a7 = "Строка Строка Строка";
-        String a8 = "Строка Строка Строка Строка Строка Строка";
-        String a9 = "Строка Строка Строка Строка Строка Строка Строка";
-        String a10 = "Строка Строка Строка";
+    public static void main(String[] args) throws IOException {
+
+        InputStream inputStream = System.in;
+        Reader inputStreamReader = new InputStreamReader(inputStream);
+        BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
+
+        System.out.println("Введи 10 строк с консоли:");
+
+        String a1 = bufferedReader.readLine();
+        String a2 = bufferedReader.readLine();
+        String a3 = bufferedReader.readLine();
+        String a4 = bufferedReader.readLine();
+        String a5 = bufferedReader.readLine();
+        String a6 = bufferedReader.readLine();
+        String a7 = bufferedReader.readLine();
+        String a8 = bufferedReader.readLine();
+        String a9 = bufferedReader.readLine();
+        String a10 = bufferedReader.readLine();
 
         char[] b1 = a1.toCharArray();
         char[] b2 = a2.toCharArray();
@@ -28,7 +37,6 @@ public class Task4 {
         char[] b10 = a10.toCharArray();
 
         int sum = (b1.length + b2.length + b3.length + b4.length + b5.length + b6.length + b7.length + b8.length + b9.length + b10.length) / 10;
-        System.out.println(sum);
 
         if (b1.length < sum) {
             System.out.println(a1);

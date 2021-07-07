@@ -15,6 +15,7 @@ public class Task_1 {
         int string_int = Integer.parseInt(points);
 
 
+
         if(string_int < 0){
             System.out.println("Grade: impossible!");
         }else if ((string_int >= 0) && (string_int <= 49)){
