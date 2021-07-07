@@ -25,3 +25,22 @@ public class Task5 {
         }
     }
 }
+
+//public class Task5 {
+//    public static void main(String[] args) {
+//
+//        String str = "It's the possibility of having a dream come true that makes life interesting.";
+//
+//        System.out.println(str.toUpperCase());
+//        System.out.println(str.toLowerCase());
+//
+//        String UpperfirstLetter = str.substring(0, 1).toUpperCase();
+//        for (int i = 1; i < str.length(); i++) {
+//            if (" ".equals(str.substring(i-1, i)))
+//                UpperfirstLetter = UpperfirstLetter + str.substring(i, i+1).toUpperCase();
+//            else
+//                UpperfirstLetter = UpperfirstLetter + str.substring(i, i+1);
+//        }
+//        System.out.println(UpperfirstLetter);
+//    }
+//}
