@@ -9,11 +9,17 @@ package lesson9string;
 
 public class Task1 {
     public static void lineOutput(String surname, int rating, String subject) {
-        String result = String.format("Студент %s получил %d по %s",surname,rating,subject);
-        System.out.println(result);
+        System.out.printf("Студент %s получил %d по %s%n",surname,rating,subject);
     }
 
     public static void main(String[] args) {
         Task1.lineOutput("Пономарев", 4, "Географии");
     }
 }
+
+
+
+
+//        Можно и так
+//        String result = String.format("Студент %s получил %d по %s",surname,rating,subject);
+//        System.out.println(result);
