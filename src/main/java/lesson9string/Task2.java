@@ -7,11 +7,23 @@
 //”Result: 1144”
 
 package lesson9string;
+import java.io.*;
 
 public class Task2 {
-    public static void main(String[] args) {
-        String a = "1122";
-        String b = "3344";
+    public static void main(String[] args) throws IOException {
+        InputStream inputStream = System.in;
+
+        Reader inputStreamReader = new InputStreamReader(inputStream);
+        BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
+
+        System.out.println("Введите первое слово состоящее из четного кол-ва букв :");
+        String a = bufferedReader.readLine();
+        System.out.println("Введите второе слово состоящее из четного кол-ва букв :");
+        String b = bufferedReader.readLine();
+
+
+//        String a = "1122";
+//        String b = "3344";
         String Result = "Result: " + (a.charAt(0)) + (a.charAt(1)) + (b.charAt(2)) + (b.charAt(3));
 
         System.out.println(Result);
