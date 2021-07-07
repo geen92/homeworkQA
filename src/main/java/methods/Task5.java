@@ -6,7 +6,7 @@ public class Task5 {
     }
 
     public static void main(String[] args) {
-        Task5.hackSalary(900);
+        Task5.hackSalary(500);
     }
 }
 
