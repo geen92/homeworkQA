@@ -61,3 +61,34 @@ public class Task4 {
         }
     }
 }
+
+//import java.io.*;
+//
+//public class Task4 {
+//
+//    public static void main(String[] args) throws IOException {
+//
+//        InputStream inputStream = System.in;
+//        Reader inputStreamReader = new InputStreamReader(inputStream);
+//        BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
+//
+//        String[] array = new String[10];
+//
+//        System.out.println("Введите 10 значений массива: ");
+//        for (int i = 0; i < 10; i++) {
+//            String arrayNumbers = bufferedReader.readLine();
+//            array[i] = arrayNumbers;
+//        }
+//        int totalLength = 0;
+//        for (int i = 0; i < array.length; i++){
+//            totalLength += array[i].length();
+//        }
+//        int averageLength = totalLength / array.length;
+//
+//        for (int i = 0; i < array.length; i++){
+//            if (array[i].length() < averageLength){
+//                System.out.print(array[i] + " ");
+//            }
+//        }
+//    }
+//}

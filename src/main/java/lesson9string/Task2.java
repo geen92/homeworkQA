@@ -18,3 +18,21 @@ public class Task2 {
 
     }
 }
+
+//import java.io.*;
+//public class Task2 {
+//    public static void main(String[] args) throws IOException {
+//
+//        InputStream inputStream = System.in;
+//        Reader inputStreamReader = new InputStreamReader(inputStream);
+//        BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
+//
+//        System.out.println("Введите первое слово состоящее из четного кол-ва букв :");
+//        String firstWord = bufferedReader.readLine();
+//        System.out.println("Введите второе слово состоящее из четного кол-ва букв :");
+//        String secondWord = bufferedReader.readLine();
+//
+//        String resultingWord = (firstWord.substring(0, firstWord.length()/2)) + (secondWord.substring(secondWord.length()/2));
+//        System.out.println(resultingWord);
+//    }
+//}
