@@ -16,15 +16,25 @@ public class Task2 {
         Reader inputStreamReader = new InputStreamReader(inputStream);
         BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
 
-        System.out.println("Введите первое слово состоящее из четного кол-ва букв :");
+        System.out.println("ввести первое слова с клавиатуры, состоящие из\n" +
+                "//четного числа букв :");
         String a = bufferedReader.readLine();
-        System.out.println("Введите второе слово состоящее из четного кол-ва букв :");
+        System.out.println("ввести второе слова с клавиатуры, состоящие из\n" +
+                "//четного числа букв :");
         String b = bufferedReader.readLine();
 
 
 //        String a = "1122";
 //        String b = "3344";
-        String Result = "Result: " + (a.charAt(0)) + (a.charAt(1)) + (b.charAt(2)) + (b.charAt(3));
+        char[] resultA = a.toCharArray();
+        char[] resultB = b.toCharArray();
+        String aa = ""+resultA[0]+resultA[1];
+        String bb = ""+resultB[resultB.length-2]+resultB[resultB.length-1];
+//        System.out.println(""+resultA[0]+resultA[1]);
+//        System.out.println(""+resultB[resultB.length-2]+resultB[resultB.length-1]);
+        String Result = aa + bb;
+
+//        String Result = "Result: " + (a.charAt(0)) + (a.charAt(1)) + (b.charAt(2)) + (b.charAt(3));
 
         System.out.println(Result);
 
