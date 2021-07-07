@@ -16,11 +16,18 @@ public class Task3 {
         String s3 = "8 plus 10";
         String s4 = "16 minus 5";
 
-        String[] expression = s3.split("\\s");
-        int temp = 1;
-        if (expression[1].equals("plus")) System.out.println(Integer.parseInt(expression[0]) + Integer.parseInt(expression[2]));
+        String[] expression = s2.split("\\s");
+        int temp = 0;
+        if (expression[1].contains("plus"))
         {
-        } if ((expression[1].equals("minus"))) System.out.println(Integer.parseInt(expression[0]) - Integer.parseInt(expression[2]));
+            temp = (Integer.parseInt(expression[0]) + Integer.parseInt(expression[2]));
+            System.out.println(s2 + " = " + temp);
+        }
+        else if ((expression[1].contains("minus")))
+        {
+            temp = (Integer.parseInt(expression[0]) - Integer.parseInt(expression[2]));
+            System.out.println(s2 + " = " + temp);
+        }
         else System.out.println("Некорректное выражение!");
     }
 }
