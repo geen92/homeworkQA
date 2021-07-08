@@ -13,54 +13,73 @@ public class Task4 {
         BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
 
         System.out.println("Введи 10 строк с консоли:");
+        String[] array = new String[10];
 
-        String a1 = bufferedReader.readLine();
-        String a2 = bufferedReader.readLine();
-        String a3 = bufferedReader.readLine();
-        String a4 = bufferedReader.readLine();
-        String a5 = bufferedReader.readLine();
-        String a6 = bufferedReader.readLine();
-        String a7 = bufferedReader.readLine();
-        String a8 = bufferedReader.readLine();
-        String a9 = bufferedReader.readLine();
-        String a10 = bufferedReader.readLine();
+        for (int i = 0; i < 10; i++) {
+            array[i] = bufferedReader.readLine();
+        }
+        int sum=0;
+        for (String value : array) {
 
-        char[] b1 = a1.toCharArray();
-        char[] b2 = a2.toCharArray();
-        char[] b3 = a3.toCharArray();
-        char[] b4 = a4.toCharArray();
-        char[] b5 = a5.toCharArray();
-        char[] b6 = a6.toCharArray();
-        char[] b7 = a7.toCharArray();
-        char[] b8 = a8.toCharArray();
-        char[] b9 = a9.toCharArray();
-        char[] b10 = a10.toCharArray();
-
-        int sum = (b1.length + b2.length + b3.length + b4.length + b5.length + b6.length + b7.length + b8.length + b9.length + b10.length) / 10;
-
-        if (b1.length < sum) {
-            System.out.println(a1);
-        } if  (b2.length < sum) {
-            System.out.println(a2);
-        } if  (b3.length < sum) {
-            System.out.println(a3);
-        } if  (b4.length < sum) {
-            System.out.println(a4);
-        } if  (b5.length < sum) {
-            System.out.println(a5);
-        } if  (b6.length < sum) {
-            System.out.println(a6);
-        } if  (b7.length < sum) {
-            System.out.println(a7);
-        } if  (b8.length < sum) {
-            System.out.println(a8);
-        } if  (b9.length < sum) {
-            System.out.println(a9);
-        } if  (b10.length < sum) {
-            System.out.println(a10);
+            sum += value.length();
+        }
+        sum/=10;
+        for (String s : array) {
+            if (s.length() < sum) {
+                System.out.println(s);
+            }
         }
     }
 }
+//        System.out.println("Введи 10 строк с консоли:");
+//
+//        String a1 = bufferedReader.readLine();
+//        String a2 = bufferedReader.readLine();
+//        String a3 = bufferedReader.readLine();
+//        String a4 = bufferedReader.readLine();
+//        String a5 = bufferedReader.readLine();
+//        String a6 = bufferedReader.readLine();
+//        String a7 = bufferedReader.readLine();
+//        String a8 = bufferedReader.readLine();
+//        String a9 = bufferedReader.readLine();
+//        String a10 = bufferedReader.readLine();
+//
+//        char[] b1 = a1.toCharArray();
+//        char[] b2 = a2.toCharArray();
+//        char[] b3 = a3.toCharArray();
+//        char[] b4 = a4.toCharArray();
+//        char[] b5 = a5.toCharArray();
+//        char[] b6 = a6.toCharArray();
+//        char[] b7 = a7.toCharArray();
+//        char[] b8 = a8.toCharArray();
+//        char[] b9 = a9.toCharArray();
+//        char[] b10 = a10.toCharArray();
+//
+//        int sum = (b1.length + b2.length + b3.length + b4.length + b5.length + b6.length + b7.length + b8.length + b9.length + b10.length) / 10;
+//
+//        if (b1.length < sum) {
+//            System.out.println(a1);
+//        } if  (b2.length < sum) {
+//            System.out.println(a2);
+//        } if  (b3.length < sum) {
+//            System.out.println(a3);
+//        } if  (b4.length < sum) {
+//            System.out.println(a4);
+//        } if  (b5.length < sum) {
+//            System.out.println(a5);
+//        } if  (b6.length < sum) {
+//            System.out.println(a6);
+//        } if  (b7.length < sum) {
+//            System.out.println(a7);
+//        } if  (b8.length < sum) {
+//            System.out.println(a8);
+//        } if  (b9.length < sum) {
+//            System.out.println(a9);
+//        } if  (b10.length < sum) {
+//            System.out.println(a10);
+//        }
+//    }
+//}
 
 //import java.io.*;
 //
