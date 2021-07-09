@@ -1,26 +1,19 @@
 //4) Ввести 10 строк с консоли. Вывести на консоль те строки, длина
 //которых меньше средней.
-
 package lesson9string;
-
 import java.io.*;
-
 public class Task4 {
     public static void main(String[] args) throws IOException {
-
         InputStream inputStream = System.in;
         Reader inputStreamReader = new InputStreamReader(inputStream);
         BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
-
         System.out.println("Введи 10 строк с консоли:");
         String[] array = new String[10];
-
         for (int i = 0; i < 10; i++) {
             array[i] = bufferedReader.readLine();
         }
         int sum=0;
         for (String value : array) {
-
             sum += value.length();
         }
         sum/=10;
